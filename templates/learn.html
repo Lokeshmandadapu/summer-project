@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Learn Coding</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #4B0082;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 30px;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ddd;
+    }
+
+    .navbar-right a {
+      background-color: white;
+      color: #4B0082;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .navbar-right a:hover {
+      background-color: #ddd;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo-circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #4B0082;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      max-width: 600px;
+      margin: 10px auto 30px;
+    }
+
+    .start-btn {
+      padding: 14px 30px;
+      font-size: 20px;
+      background-color: #4B0082;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-btn:hover {
+      background-color: #370062;
+    }
+
+    footer {
+      background-color: #fff;
+      padding: 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+
+    footer a {
+      color: #4B0082;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="navbar-right">
+      <a href="/login">Sign In</a>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main-content">
+    <div class="logo-circle">
+      <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo">
+    </div>
+
+    <h1>Welcome to Ascend Skills</h1>
+
+    <p>Start your journey to master web and programming languages with interactive tutorials and examples.</p>
+
+    <a href="{{ url_for('index') }}" class="start-btn" target="_blank">Start Learning</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Learn Coding. All rights reserved. |
+    <a href="https://www.instagram.com/ascendskills.club?igsh=MXFzcGxva3p0M3U3cA==" target="_blank">Instagram</a> |
+    <a href="https://www.linkedin.com/in/lokesh-mandadapu-2919a32a4" target="_blank">LinkedIn</a> |
+    <a href="https://youtube.com/@ascendskills?si=2_YC9qkrfcQdoP2d" target="_blank">YouTube</a> |
+    📞<a href="tel:+919876543210">+91 98765 43210</a>
+  </footer>
+
+</body>
+</html>
