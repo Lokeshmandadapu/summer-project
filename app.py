@@ -8,14 +8,15 @@ app = Flask(__name__)
 db_config = {
     "host": "localhost",
     "user": "root",
-    "password": "Lokesh@123",
+    "password": "enter ur password",
     "database": "tutorial"
 }
 
-# --- JDoodle Configuration ---
-JDoodle_CLIENT_ID = "57588309f5301702536339af624d1fa5"
-JDoodle_CLIENT_SECRET = "95f732522d2f4f8ae9b9de16217e5a89cb9ada642c84797af1af787cc64664ba"
+--- JDoodle Configuration ---
+JDoodle_CLIENT_ID = "your_client_id_here"
+JDoodle_CLIENT_SECRET = "your_client_secret_here"
 JDoodle_URL = "https://api.jdoodle.com/v1/execute"
+
 
 # --- Routes ---
 
