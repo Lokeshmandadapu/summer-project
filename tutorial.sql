@@ -112,86 +112,86 @@ INSERT INTO topics (language, topic_name, content, code, topic_order) VALUES
 
 INSERT INTO topics (language, topic_name, content, code, topic_order) VALUES
 ('css', 'CSS Introduction',
-'CSS stands for Cascading Style Sheets. It is used to style HTML content including layout, color, and fonts.',
-'<style>\np {\n  color: blue;\n}\n</style>\n<p>Blue text</p>', 1),
+'CSS stands for Cascading Style Sheets.\nIt is used to style and format HTML documents.\nCSS controls colors, fonts, spacing, and layout.\nIt separates design from content.\nYou can write CSS in a separate file or inside HTML.\nA CSS rule targets HTML elements and applies styles.\nCSS improves website appearance and consistency.\nIt is supported by all major browsers.\nInline, internal, and external stylesheets are the three main ways to use CSS.\nExternal CSS is best for larger projects.',
+'<style>\np { color: blue; font-size: 18px; }\n</style>\n<p>This is styled with CSS</p>', 1),
 
 ('css', 'CSS Syntax',
-'CSS syntax is composed of a selector and a declaration block. Each property ends with a semicolon.',
-'<style>\nbody {\n  background-color: lightgray;\n}\n</style>', 2),
+'CSS syntax consists of a selector and a declaration block.\nThe selector chooses the HTML element to style.\nThe declaration block contains one or more property-value pairs.\nEach property specifies a style feature like color or font-size.\nA colon separates properties and values.\nA semicolon ends each declaration.\nCurly braces hold the declarations.\nWhitespace and indentation improve readability.\nComments can be added with /* comment */.\nProper syntax ensures your styles work as intended.',
+'<style>\nbody { background-color: lightgray; color: black; }\n</style>\n<p>The page background is light gray.</p>', 2),
 
 ('css', 'CSS Selectors',
-'Selectors target HTML elements. Common types include universal (*), class (.), ID (#), and element selectors.',
-'<style>\n.highlight {\n  color: red;\n}\n</style>\n<p class="highlight">Red</p>', 3),
+'Selectors define which HTML elements are affected by a style.\nThe universal selector (*) targets all elements.\nElement selectors target by tag name.\nClass selectors use a dot (.) followed by the class name.\nID selectors use a hash (#) followed by the ID.\nGrouping selectors apply the same style to multiple elements.\nAttribute selectors style elements based on attributes.\nPseudo-classes style elements in certain states.\nCombining selectors makes more specific rules.\nSelectors are the foundation of CSS targeting.',
+'<style>\n.highlight { color: red; font-weight: bold; }\n</style>\n<p class="highlight">This text is red and bold.</p>', 3),
 
 ('css', 'CSS Colors',
-'Colors can be defined using names, hex codes, rgb(), rgba(), and hsl().',
-'<style>\nh1 {\n  color: #ff6600;\n}\n</style>', 4),
+'CSS colors style text, backgrounds, and borders.\nYou can use named colors like red or blue.\nHexadecimal values define exact shades.\nRGB values define colors using red, green, blue channels.\nRGBA adds transparency.\nHSL uses hue, saturation, and lightness.\nColors can be applied to any element.\nTransparent and semi-transparent colors are possible.\nConsistent colors improve readability.\nUse color contrast for accessibility.',
+'<style>\nh1 { color: #ff6600; }\n</style>\n<h1>CSS Colors Example</h1>', 4),
 
 ('css', 'CSS Backgrounds',
-'Backgrounds can be set using background-color, background-image, and background-repeat.',
-'<style>\ndiv {\n  background-color: yellow;\n}\n</style>\n<div>Background</div>', 5),
+'CSS backgrounds can be solid colors or images.\nbackground-color sets the background color.\nbackground-image sets an image as background.\nbackground-repeat controls if the image repeats.\nbackground-size changes the image size.\nbackground-position positions the image.\nbackground-attachment can fix the image during scroll.\nYou can layer multiple backgrounds.\nBackgrounds can be applied to any visible element.\nThey enhance design and style.',
+'<style>\ndiv { background-color: yellow; padding: 10px; }\n</style>\n<div>This div has a yellow background.</div>', 5),
 
 ('css', 'CSS Borders',
-'Borders can be styled using width, style, and color. E.g., border: 2px solid red;',
-'<style>\np {\n  border: 2px dashed green;\n}\n</style>\n<p>Border</p>', 6),
+'Borders surround elements and can be styled.\nUse border-width, border-style, and border-color.\nCommon styles include solid, dashed, dotted, and double.\nYou can apply borders to all sides or specific sides.\nRounded corners use border-radius.\nBorders can be combined with background styles.\nTransparent borders can create spacing effects.\nBorders work with any visible element.\nThey can highlight or separate content.\nBorder thickness affects emphasis.',
+'<style>\np { border: 2px dashed green; padding: 5px; }\n</style>\n<p>This paragraph has a green dashed border.</p>', 6),
 
 ('css', 'CSS Margins',
-'Margins provide spacing outside elements. You can use margin, margin-top, etc.',
-'<style>\ndiv {\n  margin: 20px;\n}\n</style>\n<div>Margin Example</div>', 7),
+'Margins create space outside an element\'s border.\nUse margin to set all sides at once.\nmargin-top, margin-right, margin-bottom, margin-left set sides individually.\nMargins can use px, %, em, or auto values.\nAuto margins are often used for centering.\nMargins can collapse between vertical elements.\nNegative margins pull elements closer.\nMargins do not affect the element\'s size.\nThey help space out page elements.\nGood margin use improves layout.',
+'<style>\ndiv { margin: 20px; background: #eee; }\n</style>\n<div>This box has margins.</div>', 7),
 
 ('css', 'CSS Padding',
-'Padding adds space inside an element''s border. Defined with padding or directional properties.',
-'<style>\ndiv {\n  padding: 15px;\n  background: #eee;\n}\n</style>', 8),
+'Padding adds space inside an element\'s border.\nIt pushes content inward from the border.\nUse padding to set all sides at once.\npadding-top, padding-right, padding-bottom, padding-left set sides individually.\nPadding values can be px, %, em, or rem.\nPadding affects the total element size.\nBackgrounds extend into the padding area.\nPadding creates breathing space for text.\nToo much padding can waste space.\nUse padding for balanced design.',
+'<style>\ndiv { padding: 15px; background: #eee; }\n</style>\n<div>This box has padding.</div>', 8),
 
 ('css', 'CSS Fonts',
-'Fonts can be styled using font-family, font-size, font-style, and font-weight.',
-'<style>\nh2 {\n  font-family: Arial;\n  font-weight: bold;\n}\n</style>', 9),
+'Fonts define the appearance of text.\nfont-family sets the typeface.\nMultiple fonts can be listed for fallback.\nfont-size controls text size.\nfont-style can be normal, italic, or oblique.\nfont-weight changes text thickness.\nWeb-safe fonts are supported on most devices.\nGoogle Fonts can add more variety.\nFonts impact readability and style.\nChoose fonts that match your design tone.',
+'<style>\nh2 { font-family: Arial, sans-serif; font-weight: bold; }\n</style>\n<h2>This heading uses Arial bold.</h2>', 9),
 
 ('css', 'CSS Text',
-'Text styling includes alignment, transformation, decoration, and spacing.',
-'<style>\np {\n  text-align: center;\n  text-transform: uppercase;\n}\n</style>', 10),
+'CSS can style text in many ways.\ntext-align controls horizontal alignment.\ntext-transform changes case.\ntext-decoration adds lines like underline.\nletter-spacing adjusts space between letters.\nword-spacing adjusts space between words.\nline-height changes vertical space between lines.\ncolor changes text color.\nText styles improve readability.\nUse text styles consistently.',
+'<style>\np { text-align: center; text-transform: uppercase; }\n</style>\n<p>centered uppercase text</p>', 10),
 
 ('css', 'CSS Display',
-'Specifies how an element is displayed. Values include block, inline, flex, none.',
-'<style>\nspan {\n  display: block;\n}\n</style>', 11),
+'The display property defines how elements are shown.\nblock elements start on a new line and take full width.\ninline elements stay in the same line and take only needed width.\ninline-block elements are inline but allow height/width settings.\nnone hides the element completely.\nflex creates a flexible layout container.\ngrid creates a two-dimensional layout.\nChanging display can alter page structure.\nDisplay affects layout and positioning.\nIt is one of the most important CSS properties.',
+'<style>\nspan { display: block; background: yellow; }\n</style>\n<span>Block element 1</span><span>Block element 2</span>', 11),
 
 ('css', 'CSS Positioning',
-'Position defines how an element is placed in the document. Values include static, relative, absolute, fixed.',
-'<style>\ndiv {\n  position: absolute;\n  top: 20px;\n  left: 30px;\n}\n</style>', 12),
+'Positioning controls how elements are placed.\nstatic is the default normal flow.\nrelative positions element relative to itself.\nabsolute positions element relative to nearest positioned ancestor.\nfixed keeps element in place during scroll.\nsticky switches between relative and fixed.\nTop, right, bottom, left set the offset.\nZ-index controls stacking order.\nPositioning enables creative layouts.\nMisuse can cause layout issues.',
+'<style>\ndiv { position: relative; background: #ddd; padding: 10px; }\nspan { position: absolute; top: 10px; left: 20px; background: yellow; }\n</style>\n<div>Container<span>Absolute box</span></div>', 12),
 
 ('css', 'CSS Float',
-'Float allows elements to align beside each other. Clear prevents wrapping.',
-'<style>\nimg {\n  float: left;\n  margin-right: 10px;\n}\n</style>', 13),
+'Float moves elements to the left or right.\nOther content flows around floated elements.\nclear stops content from wrapping around floats.\nFloats are often used for images in text.\nThey can also create column layouts.\nFloat can be left, right, none, or inherit.\nOveruse of floats can break layouts.\nModern layouts often use flexbox instead.\nClearing floats is important for stability.\nFloat still has uses in specific cases.',
+'<style>\nimg { float: left; margin-right: 10px; }\n</style>\n<img src="https://via.placeholder.com/50">This text wraps around the image.', 13),
 
 ('css', 'CSS Flexbox',
-'Flexbox provides a flexible layout. It aligns items horizontally or vertically using container properties.',
-'<style>\n.box {\n  display: flex;\n  gap: 10px;\n}\n</style>\n<div class="box">\n  <div>1</div>\n  <div>2</div>\n</div>', 14),
+'Flexbox provides a flexible layout model.\nIt aligns items horizontally or vertically.\nUse display:flex on the container.\njustify-content controls horizontal alignment.\nalign-items controls vertical alignment.\nflex-wrap allows items to wrap onto new lines.\nflex-grow controls how much items expand.\nflex-shrink controls how items shrink.\nIt simplifies responsive design.\nFlexbox is widely used in modern web design.',
+'<style>\n.box { display: flex; gap: 10px; }\n.box div { background: lightblue; padding: 10px; }\n</style>\n<div class="box"><div>1</div><div>2</div><div>3</div></div>', 14),
 
 ('css', 'CSS Grid',
-'Grid provides a two-dimensional layout system. Define rows and columns using grid-template properties.',
-'<style>\n.grid {\n  display: grid;\n  grid-template-columns: auto auto;\n}\n</style>', 15),
+'Grid is a two-dimensional layout system.\nUse display:grid on the container.\nDefine rows and columns with grid-template.\nGap sets space between items.\nGrid allows precise placement of items.\nYou can span items across multiple cells.\nGrid can create complex layouts easily.\nIt works well with media queries.\nGrid simplifies responsive design.\nIt is powerful but easy to learn.',
+'<style>\n.grid { display: grid; grid-template-columns: auto auto; gap: 10px; }\n.grid div { background: lightgreen; padding: 10px; }\n</style>\n<div class="grid"><div>Box 1</div><div>Box 2</div><div>Box 3</div><div>Box 4</div></div>', 15),
 
 ('css', 'CSS Pseudo-classes',
-'Pseudo-classes apply styles based on element states. Examples include :hover and :focus.',
-'<style>\na:hover {\n  color: green;\n}\n</style>\n<a href="#">Hover</a>', 16),
+'Pseudo-classes style elements in specific states.\n:hover applies when mouse is over an element.\n:focus applies when element is focused.\n:first-child targets the first child element.\n:last-child targets the last child element.\n:nth-child targets specific children.\n:checked applies to checked inputs.\nThey make interactive styles without JavaScript.\nPseudo-classes enhance usability.\nThey work with most modern browsers.',
+'<style>\na:hover { color: green; }\n</style>\n<a href="#">Hover over this link</a>', 16),
 
 ('css', 'CSS Pseudo-elements',
-'Pseudo-elements style specific parts of elements, like ::before and ::after.',
-'<style>\np::first-line {\n  font-weight: bold;\n}\n</style>', 17),
+'Pseudo-elements style specific parts of elements.\n::before inserts content before an element.\n::after inserts content after an element.\n::first-line styles only the first line of text.\n::first-letter styles only the first letter.\nThey can add decorative elements.\nThey don\'t need extra HTML.\nContent in pseudo-elements is not selectable by default.\nThey are useful for icons and labels.\nThey make designs cleaner.',
+'<style>\np::first-line { font-weight: bold; color: blue; }\n</style>\n<p>This is a paragraph with the first line styled differently for emphasis.</p>', 17),
 
 ('css', 'CSS Transitions',
-'Transitions animate changes smoothly. Use transition-duration and properties.',
-'<style>\ndiv {\n  transition: background 0.3s;\n}\n\ndiv:hover {\n  background: red;\n}\n</style>\n<div>Hover me</div>', 18),
+'Transitions animate property changes smoothly.\nUse transition-property to choose what changes.\ntransition-duration sets how long it takes.\ntransition-timing-function controls speed curve.\nMultiple properties can be transitioned.\nHover effects often use transitions.\nThey make interactions more engaging.\nTransitions can be combined with transforms.\nShort durations feel more responsive.\nOveruse can slow performance.',
+'<style>\ndiv { background: lightblue; transition: background 0.3s; padding: 10px; }\ndiv:hover { background: red; }\n</style>\n<div>Hover me</div>', 18),
 
 ('css', 'CSS Animations',
-'Use @keyframes to define animations. Set duration, steps, and animation-name.',
-'<style>\n@keyframes fade {\n  from { opacity: 0; }\n  to { opacity: 1; }\n}\n\ndiv {\n  animation: fade 2s;\n}\n</style>\n<div>Hello World</div>', 19),
+'Animations use @keyframes to define changes.\nanimation-name links to the keyframes.\nanimation-duration sets the length.\nanimation-iteration-count sets repeats.\nanimation-direction can reverse or alternate.\nYou can animate multiple properties.\nAnimations can loop infinitely.\nThey work without JavaScript.\nThey add dynamic effects to pages.\nToo many animations can be distracting.',
+'<style>\n@keyframes fade { from { opacity: 0; } to { opacity: 1; } }\ndiv { animation: fade 2s; background: lightpink; padding: 10px; }\n</style>\n<div>Hello World</div>', 19),
 
 ('css', 'CSS Media Queries',
-'Media queries help make responsive designs. They apply styles based on screen size.',
-'<style>\n@media (max-width: 600px) {\n  body {\n    background: lightblue;\n  }\n}\n</style>', 20);
+'Media queries create responsive designs.\nThey apply styles based on device size.\nUse @media with conditions like max-width.\nYou can change layouts for mobile or desktop.\nThey improve usability on all devices.\nMultiple queries can be used in one stylesheet.\nCommon breakpoints are 600px, 768px, 1024px.\nThey can target orientation and resolution.\nResponsive design is essential today.\nMedia queries work with all modern browsers.',
+'<style>\n@media (max-width: 600px) { body { background: lightblue; } }\n</style>\n<p>Resize the window to see background change.</p>', 20);
 
--- ✅ Python Topics (20) cloned from W3Schools-style structure
+
 -- Assumes `topics` table exists with: language, topic_name, content, code, topic_order
 
 INSERT INTO topics (language, topic_name, content, code, topic_order) VALUES
@@ -394,81 +394,81 @@ INSERT INTO topics (language, topic_name, content, code, topic_order) VALUES
 
 INSERT INTO topics (language, topic_name, content, code, topic_order) VALUES
 ('js', 'JavaScript Introduction',
-'JavaScript is a scripting language for web development.\nIt runs in the browser and can update HTML and CSS.\nSupports event-driven, functional, and object-oriented styles.\nCommonly used to make pages interactive.\nCan be embedded directly in HTML.',
-'<script>\n  alert("Welcome to JavaScript!");\n</script>', 1),
+'JavaScript is used to create interactive web pages.\nIt is executed in the browser, not on the server.\nCommonly used for DOM manipulation and event handling.\nCan change HTML and CSS on the fly.\nWorks alongside HTML and CSS.\nSupports object-oriented and functional programming.\nOften used for form validation.\nCan interact with APIs to fetch data.\nCan create animations and dynamic effects.\nPlays a key role in modern web development.',
+'<script>\ndocument.write("Welcome to JavaScript!");\n</script>', 1),
 
 ('js', 'JavaScript Syntax',
-'JavaScript syntax includes statements, variables, operators, and expressions.\nSemicolons are used to end statements.\nBlocks are defined with curly braces.\nWhitespace is ignored but improves readability.',
-'<script>\n  let x = 10;\n  let y = 20;\n  console.log(x + y);\n</script>', 2),
+'JavaScript syntax is the set of rules for writing code.\nStatements should end with a semicolon.\nCurly braces define code blocks.\nWhitespace is ignored but improves readability.\nComments start with // or /* */.\nVariables are declared using let, const, or var.\nCase-sensitive: myVar ≠ MyVar.\nFunctions are defined with the function keyword.\nUse parentheses for grouping and function calls.\nSyntax errors stop script execution.',
+'<script>\nlet x = 5, y = 10;\ndocument.write("Sum: " + (x + y));\n</script>', 2),
 
 ('js', 'JavaScript Variables',
-'Variables store data using var, let, or const.\nlet and const are block scoped.\nconst is read-only after declaration.\nVariable names are case-sensitive.',
-'<script>\n  let name = "Alice";\n  console.log(name);\n</script>', 3),
+'Variables store data in memory.\nUse let for block-scoped variables.\nconst defines constants that can’t be reassigned.\nvar is function-scoped and older.\nVariable names must start with letters, $ or _.\nThey are case-sensitive.\nVariables can store strings, numbers, etc.\nUninitialized variables are undefined.\nUse typeof to check variable type.\nNaming variables clearly improves code readability.',
+'<script>\nlet name = "Alice";\ndocument.write("Hello, " + name);\n</script>', 3),
 
 ('js', 'JavaScript Data Types',
-'JavaScript supports numbers, strings, booleans, objects, undefined, and null.\nUse typeof to check type.\nDynamic typing means types are assigned at runtime.',
-'<script>\n  let isOnline = true;\n  console.log(typeof isOnline);\n</script>', 4),
+'JavaScript has different types of data.\nPrimitive types include string, number, and boolean.\nSpecial types include null and undefined.\nObjects and arrays are complex types.\nUse typeof to check type.\nStrings are in quotes.\nNumbers can be integers or floats.\nBoolean values are true or false.\nData types are dynamic in JS.\nJavaScript is loosely typed.',
+'<script>\nlet age = 25;\ndocument.write(typeof age);\n</script>', 4),
 
 ('js', 'JavaScript Operators',
-'Operators include arithmetic (+, -, *), comparison (==, ===), and logical (&&, ||).\nUsed for calculations and conditions.\nUse === for strict equality.',
-'<script>\n  let a = 5;\n  let b = 3;\n  console.log(a * b);\n</script>', 5),
+'Operators perform operations on variables and values.\nArithmetic: +, -, *, /, %.\nAssignment: =, +=, -=.\nComparison: ==, ===, !=, !==.\nLogical: &&, ||, !.\nUse parentheses to group expressions.\n== allows type conversion, === does not.\nUse += to increment and assign.\nTernary: condition ? val1 : val2.\nOperators are essential for conditions and calculations.',
+'<script>\nlet a = 4, b = 2;\ndocument.write("Product: " + (a * b));\n</script>', 5),
 
 ('js', 'JavaScript If Else',
-'if-else statements control flow based on conditions.\nUse else if for multiple cases.\nConditions use relational and logical operators.',
-'<script>\n  let age = 18;\n  if (age >= 18) console.log("Adult");\n  else console.log("Minor");\n</script>', 6),
+'If statements run code based on a condition.\nUse else for alternate code.\nUse else if for multiple conditions.\nComparison operators check values.\nConditions return true or false.\nCode blocks use curly braces.\nLogical operators combine conditions.\nAvoid deeply nested ifs.\nCan be replaced with switch in some cases.\nTernary is shorthand for simple if-else.',
+'<script>\nlet marks = 80;\nif(marks >= 50) { document.write("Pass"); } else { document.write("Fail"); }\n</script>', 6),
 
 ('js', 'JavaScript Switch',
-'switch evaluates expressions and runs matched case.\nEach case ends with break to prevent fall-through.\ndefault handles unmatched cases.',
-'<script>\n  let fruit = "apple";\n  switch(fruit) {\n    case "apple": console.log("Red"); break;\n    default: console.log("Unknown");\n  }\n</script>', 7),
+'Switch tests a value against multiple cases.\nEach case should end with break.\nDefault runs if no match is found.\nFaster and cleaner than multiple ifs.\nSupports string and number comparison.\nCase-sensitive matching.\nAvoid fall-through by using break.\nOrganizes code with multiple outcomes.\nUse switch only for exact matches.\nCannot compare expressions.',
+'<script>\nlet color = "blue";\nswitch(color) {\n  case "blue": document.write("Blue Color"); break;\n  default: document.write("Unknown");\n}\n</script>', 7),
 
 ('js', 'JavaScript Loops',
-'JavaScript supports for, while, and do-while loops.\nUse for for definite iterations.\nbreak and continue alter flow.\nUse with arrays and counters.',
-'<script>\n  for (let i = 0; i < 3; i++) {\n    console.log(i);\n  }\n</script>', 8),
+'Loops repeat code blocks.\nfor loop: definite number of iterations.\nwhile loop: checks condition before each iteration.\ndo-while: runs at least once.\nbreak exits loop early.\ncontinue skips to next iteration.\nUseful for arrays and counters.\nAvoid infinite loops.\nUse loop variables carefully.\nNesting loops increases complexity.',
+'<script>\nfor(let i = 0; i < 3; i++) {\n  document.write(i + "<br>");\n}\n</script>', 8),
 
 ('js', 'JavaScript Functions',
-'Functions encapsulate reusable logic.\nDeclare with function keyword.\nCan take parameters and return values.\nArrow functions offer shorter syntax.',
-'<script>\n  function greet(name) {\n    return "Hello " + name;\n  }\n  console.log(greet("Bob"));\n</script>', 9),
+'Functions group reusable code.\nDeclared using function keyword.\nCan accept parameters.\nMay return values using return.\nArrow functions are shorter.\nFunctions help reduce repetition.\nFunction calls run the code.\nUse descriptive function names.\nCan be stored in variables.\nJavaScript supports first-class functions.',
+'<script>\nfunction greet(name) {\n  return "Hello " + name;\n}\ndocument.write(greet("Bob"));\n</script>', 9),
 
 ('js', 'JavaScript Arrays',
-'Arrays store ordered collections.\nAccess via index.\nCommon methods include push, pop, shift, unshift, and splice.',
-'<script>\n  let colors = ["red", "blue"];\n  colors.push("green");\n  console.log(colors);\n</script>', 10),
+'Arrays store ordered lists.\nElements are accessed by index.\nIndex starts at 0.\nUse push() to add to end.\npop() removes last item.\nshift() removes first.\nunshift() adds to beginning.\nsplice() adds/removes items.\nlength gives size.\nLoop through arrays with for or forEach.',
+'<script>\nlet fruits = ["apple", "banana"];\nfruits.push("orange");\ndocument.write(fruits);\n</script>', 10),
 
 ('js', 'JavaScript Objects',
-'Objects store key-value pairs.\nUse dot or bracket notation to access values.\nCan nest objects and arrays.\nUseful for structured data.',
-'<script>\n  let person = { name: "Tom", age: 30 };\n  console.log(person.name);\n</script>', 11),
+'Objects store key-value pairs.\nProperties are accessed with dot or brackets.\nKeys are strings, values can be any type.\nCan nest objects and arrays.\nUseful for storing structured data.\nObjects are mutable.\nAdd or delete properties dynamically.\nUse for...in to loop through keys.\nMethods are functions in objects.\nJSON is based on JavaScript objects.',
+'<script>\nlet person = {name: "Tom", age: 25};\ndocument.write(person.name);\n</script>', 11),
 
 ('js', 'JavaScript Events',
-'Events respond to user actions.\nUse addEventListener or inline HTML events.\nCommon events: click, mouseover, keydown.',
-'<button onclick="alert(\'Clicked!\')">Click me</button>', 12),
+'Events respond to user actions.\nCommon events: click, mouseover, keydown.\nAdd listeners with addEventListener().\nHandlers run when event fires.\nInline event handlers use HTML.\nPrevent default actions with preventDefault().\nUse events to make interactive UIs.\nYou can remove listeners too.\nEvents can be attached to any HTML element.\nUseful for form validation and buttons.',
+'<button onclick="document.write(\'Button Clicked!\')">Click Me</button>', 12),
 
 ('js', 'JavaScript DOM',
-'DOM lets you access and modify HTML.\nUse getElementById, querySelector, etc.\nYou can change content, styles, and structure dynamically.',
-'<p id="demo">Old text</p>\n<script>\n  document.getElementById("demo").textContent = "Changed!";\n</script>', 13),
+'DOM stands for Document Object Model.\nRepresents HTML as objects.\nUse getElementById() to select elements.\nquerySelector() supports CSS selectors.\nChange text with textContent or innerHTML.\nStyle elements using style property.\nAdd/remove elements dynamically.\nListen to events on DOM elements.\nDOM manipulation enables dynamic pages.\nEssential for client-side scripting.',
+'<p id="demo">Old Text</p>\n<script>\ndocument.getElementById("demo").textContent = "New Text";\n</script>', 13),
 
 ('js', 'JavaScript String Methods',
-'String methods include length, toUpperCase, slice, replace, and split.\nStrings are immutable.\nUseful for text processing.',
-'<script>\n  let txt = "Hello World";\n  console.log(txt.toUpperCase());\n</script>', 14),
+'Strings are text data types.\nlength returns the number of characters.\ntoUpperCase() converts to capital.\nslice() extracts part of the string.\nreplace() changes content.\nsplit() converts to array.\ntrim() removes whitespace.\nconcat() joins strings.\nindexOf() finds position of substring.\nStrings are immutable.',
+'<script>\nlet txt = "hello";\ndocument.write(txt.toUpperCase());\n</script>', 14),
 
 ('js', 'JavaScript Number Methods',
-'Includes parseInt, parseFloat, toFixed, isNaN.\nNaN means not a number.\nUsed to handle numeric conversions and formats.',
-'<script>\n  let n = 5.6789;\n  console.log(n.toFixed(2));\n</script>', 15),
+'JavaScript treats all numbers as float.\ntoFixed() formats decimals.\nparseInt() converts string to int.\nparseFloat() converts to float.\nNumber.isNaN() checks for NaN.\nMath.round() rounds numbers.\nMath.floor() rounds down.\nMath.ceil() rounds up.\nInfinity and -Infinity are special values.\n0.1 + 0.2 != 0.3 due to floating point issues.',
+'<script>\nlet num = 5.678;\ndocument.write(num.toFixed(2));\n</script>', 15),
 
 ('js', 'JavaScript Date',
-'Date objects handle time and dates.\nUse new Date() constructor.\nGet/set methods include getFullYear, getMonth, etc.',
-'<script>\n  let today = new Date();\n  console.log(today.getFullYear());\n</script>', 16),
+'Date objects handle time and date.\nUse new Date() to create a date.\ngetFullYear() returns year.\ngetMonth() returns 0-11.\ngetDate() gives day of month.\ngetHours(), getMinutes(), getSeconds() available.\nset methods also exist.\nDate.now() gives timestamp.\nCan be formatted with toDateString().\nUseful for clocks, logs, and expiry.',
+'<script>\nlet d = new Date();\ndocument.write(d.getFullYear());\n</script>', 16),
 
 ('js', 'JavaScript Math',
-'Math object provides functions like round, ceil, floor, max, min.\nMath.random() generates random numbers between 0 and 1.',
-'<script>\n  console.log(Math.max(5, 10));\n</script>', 17),
+'Math object provides numeric functions.\nMath.round() rounds numbers.\nMath.random() gives random between 0 and 1.\nMath.max() returns largest value.\nMath.min() returns smallest.\nMath.sqrt() gives square root.\nMath.pow() for exponents.\nMath.abs() gives absolute value.\nMath.floor() and ceil() round values.\nUseful for calculations and games.',
+'<script>\ndocument.write(Math.max(10, 20));\n</script>', 17),
 
 ('js', 'JavaScript JSON',
-'JSON is used for data exchange.\nUse JSON.stringify() and JSON.parse().\nWidely used in APIs.\nMust be valid JSON format.',
-'<script>\n  let obj = { name: "Tom" };\n  let json = JSON.stringify(obj);\n  console.log(json);\n</script>', 18),
+'JSON = JavaScript Object Notation.\nUsed for data exchange.\nConsists of key-value pairs.\nUse JSON.stringify() to convert to string.\nUse JSON.parse() to convert to object.\nKeys must be in double quotes.\nNo functions allowed in JSON.\nData must follow strict format.\nCommon in APIs.\nEasy to send/receive structured data.',
+'<script>\nlet obj = {name: "Sam"};\ndocument.write(JSON.stringify(obj));\n</script>', 18),
 
 ('js', 'JavaScript Error Handling',
-'Use try...catch to handle exceptions.\ncatch gets the error object.\nfinally runs always.\nUse throw to raise custom errors.',
-'<script>\n  try {\n    throw "Error";\n  } catch (e) {\n    console.log(e);\n  }\n</script>', 19),
+'Use try...catch to handle errors.\ntry block runs code.\ncatch catches errors if any.\nfinally always runs.\nthrow creates custom errors.\nAvoid crashing apps with proper handling.\nUse meaningful error messages.\nHelps debug issues in runtime.\nNested try-catch is allowed.\nUseful in async operations too.',
+'<script>\ntry {\n throw "Error occurred";\n} catch(e) {\n document.write(e);\n}\n</script>', 19),
 
 ('js', 'JavaScript Arrow Functions',
-'Arrow functions offer a shorter function syntax.\nUseful for anonymous functions.\nInherit "this" from parent scope.',
-'<script>\n  const sum = (a, b) => a + b;\n  console.log(sum(2, 3));\n</script>', 20);
+'Arrow functions are a shorthand for regular functions.\nUse => instead of function keyword.\nShorter and cleaner syntax.\nNo binding of this.\nUseful for array methods.\nCan omit return and braces for one-liners.\nNot suitable as constructors.\nSupports implicit return.\nCompact and preferred in modern JS.\nCannot use arguments object.',
+'<script>\nconst sum = (a, b) => a + b;\ndocument.write(sum(3, 2));\n</script>', 20);
