@@ -1,4 +1,4 @@
-# 💻 Summer Project — Full Stack Web Application
+# 💻 Learn Code Hub — Full Stack Web Application
 
 This is a full-stack web application built using **HTML, CSS, JavaScript, Flask (Python), and MySQL**.  
 It demonstrates complete integration of frontend and backend technologies — ideal for learning or showcasing full-stack development skills.
